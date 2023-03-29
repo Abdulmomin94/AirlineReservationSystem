@@ -1,7 +1,10 @@
 package com.ars.exception;
 
-public class ARSystServiceException extends Exception {
+public class ARSServiceException extends Exception{
 
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 
 	public String getErrorCode() {
@@ -14,14 +17,15 @@ public class ARSystServiceException extends Exception {
 
 	private String errorCode;
 
-	public ARSystServiceException(String code, String message) {
+	public ARSServiceException(String code, String message) {
 		super(message);
 		this.errorCode = code;
 	}
 
-	public ARSystServiceException(String message) {
+	public ARSServiceException(String message) {
 		super(message);
 
 	}
+
 
 }
